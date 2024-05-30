@@ -387,6 +387,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  position: relative;
 }
 
 .contact-info-upper-container {
@@ -443,7 +444,7 @@ footer p {
 
 #media {
   position: relative;
-  top: +130px;
+  top: +100px;
 }
 
 
