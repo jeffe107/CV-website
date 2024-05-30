@@ -436,3 +436,14 @@ footer p {
   text-align: center;
   text-align: justify;
 }
+
+#events {
+  position: relative;
+}
+
+#media {
+  position: relative;
+  top: +130px;
+}
+
+
