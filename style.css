@@ -355,7 +355,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
+#publications {
   position: relative;
 }
 
@@ -439,6 +439,10 @@ footer p {
 }
 
 #events {
+  position: relative;
+}
+
+#repositories {
   position: relative;
 }
 
