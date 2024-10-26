@@ -357,6 +357,7 @@ article .icon {
 
 #publications {
   position: relative;
+  top: +80px;
 }
 
 .color-container {
@@ -440,10 +441,12 @@ footer p {
 
 #events {
   position: relative;
+  top: +80px;
 }
 
 #repositories {
   position: relative;
+  top: +80px;
 }
 
 #media {
@@ -451,4 +454,60 @@ footer p {
   top: +80px;
 }
 
+#gallery {
+  position: relative;
+  top: +80px;
+}
 
+.container_gallery {
+  display: flex;
+  position: relative;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 700ms ease-in;
+}
+
+.panel h1 {
+  font-size: 35px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h1 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+      width: 100vw;
+      transition: opacity 0.3s ease-in 0.4s;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+      display: none;
+  }
+}
+
+#journey {
+  position: relative;
+}

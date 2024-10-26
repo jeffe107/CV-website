@@ -8,6 +8,12 @@
     <title>Jeferyd Yepes</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="chord_diagram/chord_diagram.css">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -15,11 +21,12 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#journey">Skills</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#repositories">Repositories</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#media">Media</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -34,7 +41,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#journey" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
           <li><a href="#repositories" onclick="toggleMenu()">Repositories</a></li>
           <li><a href="#events" onclick="toggleMenu()">Events</a></li>
@@ -99,7 +106,7 @@
           class="icon"
           onclick="location.href='https://www.sib.swiss/directory/person/jeferyd-yepesgarcia'"
           />
-        </div>
+        </div>  
       </div>
     </section>
     <section id="about">
@@ -151,157 +158,27 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#journey'"
       />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">This is my</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Analysis</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Phyloseq</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Plotly</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pandas</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Dash</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Circos</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Sci-kit</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Pipeline Design</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Nextflow</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>nf-core</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HPC</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Containers</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Conda</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+
+    <section id="journey">
+      <p class="section__text__p1">These are my main</p>
+      <h1 class="title">Skills</h1>
+      <div>
+        <div id="chart"></div>
+        <div id="clickerWrapper">
+          <div id="progress"></div>
+          <div id="clicker">Let's Start</div>
+        </div>
+        <div id="buttonWrapper">
+          <div id="buttonWrapperInner">
+            <div id="skip" class="sideButton">SKIP INTRO</div>
+            <div id="reset" class="sideButton">RESET</div>
+            <div id="link" class="sideButton"><a href="https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord/" target="_blank">CREDITS</a></div>
           </div>
         </div>
+        <script src="chord_diagram/chord_diagram.js"></script>
       </div>
       <img
         src="./assets/arrow.png"
@@ -323,14 +200,12 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Transcriptomics</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.mdpi.com/2571-5135/8/4/20'"
-              >
-                Article
-              </button>
+              <span class="__dimensions_badge_embed__" data-doi="10.3390/ht8040020">
+              </span>
+              <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8">
+              </script>
+              <div class='altmetric-embed' data-badge-type='medium-donut' data-doi="10.3390/ht8040020"></div>
             </div>
           </div>
           <div class="details-container color-container">
@@ -341,14 +216,12 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Morphology</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.mdpi.com/2227-9717/8/9/1038'"
-              >
-                Article
-              </button>
+              <span class="__dimensions_badge_embed__" data-doi="10.3390/pr8091038">
+              </span>
+              <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8">
+              </script>
+              <div class='altmetric-embed' data-badge-type='medium-donut' data-doi="10.3390/pr8091038"></div>
             </div>
           </div>
           <div class="details-container color-container">
@@ -359,14 +232,12 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Metagenomics</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://f1000research.com/articles/13-640/v1'"
-              >
-                Article
-              </button>
+              <span class="__dimensions_badge_embed__" data-doi="10.12688/f1000research.152290.2">
+              </span>
+              <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8">
+              </script>
+              <div class='altmetric-embed' data-badge-type='medium-donut' data-doi="10.12688/f1000research.152290.2"></div>
             </div>
           </div>
         </div>
@@ -485,6 +356,12 @@
               >
                 Event
               </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://journal.embnet.org/index.php/embnetjournal/article/view/1063/1629'"
+            >
+              Report
+            </button>
             </div>
           </div>
           <div class="details-container color-container">
@@ -591,8 +468,30 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./#gallery'"
       />
+    </section>
+    <section id="gallery">
+      <p class="section__text__p1">Visualize my work through this</p>
+      <h1 class="title">Gallery</h1>
+    <div class="container_gallery">
+      <div class="panel active" style="background-image: url(assets/iTOL.png);">
+      </div>
+      <div class="panel" style="background-image: url(assets/comic.png);">
+      </div>
+      <div class="panel" style="background-image: url(assets/circos.jpg);">
+      </div>
+      <div class="panel" style="background-image: url(assets/network.png);">
+      </div>
+      <div class="panel" style="background-image: url(assets/bigmag.png);">
+      </div>
+    </div>
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in touch</p>
@@ -621,11 +520,12 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#journey">Skills</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#repositories">Repositories</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#media">Media</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
