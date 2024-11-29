@@ -243,7 +243,7 @@ function Draw1(){
 							"These can be specific languages, libraries, frameworks or technologies...",
 	loc = 4/2, delayDisappear = 0, delayAppear = 1);
 
-	changeTopText(newText = "Let's start by drawing out the competences in a radial distribution in order to complete a whole circunference. ",
+	changeTopText(newText = "Let's start by drawing out the competences in a radial distribution in order to complete a whole circumference. ",
 	loc = 8/2, delayDisappear = 9, delayAppear = 10, finalText = true);
 	
 	changeBottomText(newText = "These abilities will be connected by tracks or ribbons that indicate the relationship between them. ",
