@@ -151,7 +151,9 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0 10rem 2rem; /* consistent spacing between sections */
+  padding-bottom: 5rem; /* reserve space for bottom arrow to avoid overlap */
+  position: relative; /* anchor for absolutely positioned arrow */
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -289,8 +291,10 @@ section {
 
 .arrow {
   position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  z-index: 1; /* ensure arrow sits above section background but below content padding */
 }
 
 .details-container {
@@ -342,6 +346,41 @@ section {
   justify-content: space-around;
 }
 
+/* Normalize card layouts: image area fixed, buttons aligned */
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem; /* enlarge overall card */
+}
+
+/* Fixed image stage inside cards to align different image sizes */
+.details-container .article-container {
+  width: 100%;
+  height: 320px; /* larger unified image height for better visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0; /* avoid extra spacing inside image stage */
+}
+
+/* Ensure images scale consistently without distortion */
+.details-container .article-container img,
+.project-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Keep button rows aligned across cards */
+.details-container .btn-container {
+  margin-top: 1rem;
+}
+
 article {
   display: flex;
   width: 10rem;
@@ -357,7 +396,7 @@ article .icon {
 
 #publications {
   position: relative;
-  top: +80px;
+  top: 0; /* normalize vertical spacing */
 }
 
 .color-container {
@@ -441,22 +480,22 @@ footer p {
 
 #events {
   position: relative;
-  top: +80px;
+  top: 0; /* normalize vertical spacing */
 }
 
 #repositories {
   position: relative;
-  top: +80px;
+  top: 0; /* normalize vertical spacing */
 }
 
 #media {
   position: relative;
-  top: +80px;
+  top: 0; /* normalize vertical spacing */
 }
 
 #gallery {
   position: relative;
-  top: +80px;
+  top: 0; /* normalize vertical spacing */
 }
 
 .container_gallery {
@@ -465,17 +504,25 @@ footer p {
 }
 
 .panel {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255); /* letterbox background when using contain */
   height: 80vh;
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
-  flex: 0.5;
+  flex: 0.7; /* slightly wider than original (0.5) but thinner than current */
   margin: 10px;
   position: relative;
   transition: all 700ms ease-in;
+  border: 1px solid transparent; /* thin border to keep a subtle contour */
+  box-sizing: border-box;
+}
+
+/* show black contour on collapsed panels to indicate they can be expanded */
+.panel:not(.active) {
+  border-color: rgb(163, 163, 163);
 }
 
 .panel h1 {
@@ -488,7 +535,7 @@ footer p {
 }
 
 .panel.active {
-  flex: 5;
+  flex: 4.5; /* balanced prominence while keeping collapsed panels thinner */
 }
 
 .panel.active h1 {

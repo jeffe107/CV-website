@@ -24,7 +24,7 @@
           <li><a href="#journey">Skills</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#repositories">Repositories</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#trainer">Trainer</a></li>
           <li><a href="#media">Media</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -44,7 +44,7 @@
           <li><a href="#journey" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
           <li><a href="#repositories" onclick="toggleMenu()">Repositories</a></li>
-          <li><a href="#events" onclick="toggleMenu()">Events</a></li>
+          <li><a href="#trainer" onclick="toggleMenu()">Trainer</a></li>
           <li><a href="#media" onclick="toggleMenu()">Media</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -66,7 +66,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/resume-example.pdf','_blank')"
           >
             Download CV
           </button>
@@ -79,37 +79,43 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/jeferyd-yepes-garc%C3%ADa/'"
+            onclick="window.open('https://www.linkedin.com/in/jeferyd-yepes-garc%C3%ADa/','_blank')"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/jeffe107'"
+            onclick="window.open('https://github.com/jeffe107','_blank')"
           />
           <img
           src="./assets/google.png"
           alt="My Google Scholar profile"
           class="icon"
-          onclick="location.href='https://scholar.google.com/citations?hl=de&user=djCnsP0AAAAJ'"
+          onclick="window.open('https://scholar.google.com/citations?hl=de&user=djCnsP0AAAAJ','_blank')"
+          />
+          <img
+          src="./assets/nextflow.png"
+          alt="Nextflow Ambassador"
+          class="icon"
+          onclick="window.open('https://www.nextflow.io/our_ambassadors.html#:~:text=Show%20biography-,Jeferyd%20Yepes,-Show%20biography','_blank')"
           />
           <img
           src="./assets/instagram.png"
           alt="Instagram"
           class="icon"
-          onclick="location.href='https://www.instagram.com/jeffeyepesg/'"
+          onclick="window.open('https://www.instagram.com/jeffeyepesg/','_blank')"
           />
           <img
           src="./assets/university.png"
           alt="UniFr Student"
           class="icon"
-          onclick="location.href='https://www.unifr.ch/bio/en/groups/falquet/group-members-falquet.html'"
+          onclick="window.open('https://www.unifr.ch/bio/en/groups/falquet/group-members-falquet.html','_blank')"
           />
           <img
           src="./assets/sib.png"
           alt="SIB Member"
           class="icon"
-          onclick="location.href='https://www.sib.swiss/directory/person/jeferyd-yepesgarcia'"
+          onclick="window.open('https://www.sib.swiss/directory/person/jeferyd-yepesgarcia','_blank')"
           />
         </div>  
       </div>
@@ -128,7 +134,7 @@
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/oBdUZCUKWH0?si=8FOaHAviygYcxudh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="500" height="315" src="assets/SIB_RO2024.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -154,7 +160,7 @@
           <div id="buttonWrapperInner">
             <div id="skip" class="sideButton">SKIP INTRO</div>
             <div id="reset" class="sideButton">RESET</div>
-            <div id="link" class="sideButton"><a href="https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord/" target="_blank">CREDITS</a></div>
+            <div id="link" class="sideButton"><a href="https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord/" target="_blank" rel="noopener noreferrer">CREDITS</a></div>
           </div>
         </div>
         <script src="chord_diagram/chord_diagram.js"></script>
@@ -174,7 +180,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/article-1.png"
+                src="./assets/preprints_2pipe.png"
                 alt="Project 1"
                 class="project-img"
               />
@@ -190,7 +196,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/article-2.png"
+                src="./assets/scidata-modified.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -206,7 +212,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/article-3.png"
+                src="./assets/f1000_bigmag_2.png"
                 alt="Project 3"
                 class="project-img"
               />
@@ -241,11 +247,41 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">MAGFlow</h2>
+            <h2 class="experience-sub-title project-title">MAGFlow/BIgMAG</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jeffe107/MAGFlow'"
+                onclick="window.open('https://github.com/jeffe107/MAGFlow','_blank')"
+              >
+                MAGFlow
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/jeffe107/BIgMAG','_blank')"
+              >
+                BIgMAG
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/2Pipe.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">2Pipe</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://2pipe.app/','_blank')"
+              >
+                Application
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/jeffe107/2pipe','_blank')"
               >
                 Repository
               </button>
@@ -259,66 +295,37 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">BIgMAG</h2>
+            <h2 class="experience-sub-title project-title">TaxoFlow</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jeffe107/BIgMAG'"
+                onclick="window.open('https://taxoflow.work/','_blank')"
+              >
+                Application
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/jeffe107/taxoflow_tutorial','_blank')"
               >
                 Repository
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/repository-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Kraken2 Tutorial</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jeffe107/kraken-tutorial'"
-              >
-                Repository
-              </button>
-            </div>
-          </div>
+
         </div>
       </div>
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#events'"
+        onclick="location.href='./#trainer'"
       />
     </section>
-    <section id="events">
-      <p class="section__text__p1">I have participated in these</p>
-      <h1 class="title">Events</h1>
+    <section id="trainer">
+      <p class="section__text__p1">In these workshops I have been</p>
+      <h1 class="title">Trainer</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/event-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">[BC]<sup>2</sup> 2023</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.bc2.ch/'"
-              >
-                Event
-              </button>
-            </div>
-          </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -327,37 +334,49 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Workshop UNAL 2024</h2>
+            <h2 class="experience-sub-title project-title">Nextflow</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='http://bioinf.ibun.unal.edu.co/cursos/Metagenomics2024/'"
-              >
-                Event
-              </button>
-              <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://journal.embnet.org/index.php/embnetjournal/article/view/1063/1629'"
+              onclick="window.open('https://www.sib.swiss/training/course/20260317_NEXAC','_blank')"
             >
-              Report
+              Information
             </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/event-3.png"
+                src="./assets/Rtutor_course.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Visualization</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.sib.swiss/training/course/20260407_IVIPY','_blank')"
+              >
+                Information
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Course_SIB.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">ECCB 2024</h2>
+            <h2 class="experience-sub-title project-title">Metagenomics</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://eccb2024.fi/'"
+                onclick="window.open('https://www.sib.swiss/training/course/20260504_MEMIC','_blank')"
               >
-                Event
+                Information
               </button>
             </div>
           </div>
@@ -386,16 +405,29 @@
             <h2 class="experience-sub-title project-title">Biotechnology</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://cronicadelquindio.com/noticias/por-ejemplo/el-apasionado-que-a-traves-de-la-biotecnologia-busca-soluciones-para-los-campesinos-colombianos'"
-              >
-                Colombia
-              </button>
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.unifr.ch/alma-georges/articles/2024/une-these-pour-valoriser-la-paille-de-riz','_blank')"
+            >
+              Article
+            </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blog_pic.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Nextflow</h2>
+            <div class="btn-container">
+
               <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://www.unifr.ch/alma-georges/articles/2024/une-these-pour-valoriser-la-paille-de-riz'"
+              onclick="window.open('https://seqera.io/blog/magflow-bigmag-metagenomics/','_blank')"
             >
-              Switzerland
+              Blog
             </button>
             </div>
           </div>
@@ -411,40 +443,16 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.colfuturo.org/noticias-de-colfuturo/becas-suiza-oportunidades-que-transforman-vidas-y-un-pais'"
+                onclick="window.open('https://www.colfuturo.org/noticias-de-colfuturo/becas-suiza-oportunidades-que-transforman-vidas-y-un-pais','_blank')"
               >
                 Beginning
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.colfuturo.org/noticias-de-colfuturo/suiza-un-destino-para-colombianos-que-desean-transformar-su-carrera-investigativa'"
+                onclick="window.open('https://www.colfuturo.org/noticias-de-colfuturo/suiza-un-destino-para-colombianos-que-desean-transformar-su-carrera-investigativa','_blank')"
               >
                 Experience
               </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/media-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Bioprocesses</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.colmayor.edu.co/wp-content/uploads/2020/12/2.8.-Cómo-mejorar-la-producción-y-recuperación-de-antibióticos-en-biorreactores.pdf'"
-              >
-                IUCMA
-              </button>
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://issuu.com/fac.ingudea/docs/boletin_impactos___4_diciembre_2016/17'"
-            >
-              Impacts
-            </button>
             </div>
           </div>
         </div>
@@ -460,15 +468,15 @@
       <p class="section__text__p1">Visualize my work through this</p>
       <h1 class="title">Gallery</h1>
     <div class="container_gallery">
-      <div class="panel active" style="background-image: url(assets/iTOL.png);">
+      <div class="panel active" style="background-image: url(assets/Fig3.jpg);">
       </div>
       <div class="panel" style="background-image: url(assets/comic.png);">
       </div>
+      <div class="panel" style="background-image: url(assets/Fig2.jpg);">
+      </div>
       <div class="panel" style="background-image: url(assets/circos.jpg);">
       </div>
-      <div class="panel" style="background-image: url(assets/network.png);">
-      </div>
-      <div class="panel" style="background-image: url(assets/bigmag.png);">
+      <div class="panel" style="background-image: url(assets/Fig5.png);">
       </div>
     </div>
     <img
@@ -496,7 +504,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/jeferyd-yepes-garc%C3%ADa/">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/jeferyd-yepes-garc%C3%ADa/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -508,14 +516,14 @@
             <li><a href="#journey">Skills</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#repositories">Repositories</a></li>
-            <li><a href="#events">Events</a></li>
+            <li><a href="#trainer">Trainer</a></li>
             <li><a href="#media">Media</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Jeferyd Yepes García. All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 Jeferyd Yepes García. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
